@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="path_to_logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+                <section class="book-list">
+                    <div class="book">
+                        <img src="path_to_book1_cover.png" alt="To Kill a Mockingbird">
+                        <h2>To Kill a Mockingbird</h2>
+                        <p>Author: Harper Lee</p>
+                        <!-- Link the button to the corresponding section on books.html -->
+                        <a href="books.html#book1-details" class="details-button">Details</a>
+                    </div>
+                    <div class="book">
+                        <img src="path_to_book2_cover.png" alt="1984">
+                        <h2>1984</h2>
+                        <p>Author: George Orwell</p>
+                        <!-- Link the button to the corresponding section on books.html -->
+                        <a href="books.html#book2-details" class="details-button">Details</a>
+                    </div>
+                    <div class="book">
+                        <img src="path_to_book3_cover.png" alt="Pride and Prejudice">
+                        <h2>Pride and Prejudice</h2>
+                        <p>Author: Jane Austen</p>
+                        <!-- Link the button to the corresponding section on books.html -->
+                        <a href="books.html#book3-details" class="details-button">Details</a>
+                    </div>
+                    <div class="book">
+                        <img src="path_to_book4_cover.png" alt="The Great Gatsby">
+                        <h2>The Great Gatsby</h2>
+                        <p>Author: F. Scott Fitzgerald</p>
+                        <!-- Link the button to the corresponding section on books.html -->
+                        <a href="books.html#book4-details" class="details-button">Details</a>
+                    </div>
+                    <div class="book">
+                        <img src="path_to_book5_cover.png" alt="The Lord of the Rings">
+                        <h2>The Lord of the Rings</h2>
+                        <p>Author: J.R.R. Tolkien</p>
+                        <!-- Link the button to the corresponding section on books.html -->
+                        <a href="books.html#book5-details" class="details-button">Details</a>
+                    </div>
+                </section>
+            </main>
+        </section>
+    </main>
+    </main>
+    </main>
+    <div id="bookModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="hideBookDetails()">&times;</span>
+            <img id="modalBookCover" src="" alt="Book Cover">
+            <h2 id="modalBookTitle"></h2>
+            <p id="modalBookAuthor"></p>
+            <p id="modalBookDescription"></p>
+            <a id="modalBookLink" href="#" target="_blank">Purchase</a>
+            <button onclick="purchaseBook()">Buy Now</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
